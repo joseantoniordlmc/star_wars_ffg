@@ -18,6 +18,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+# Devise User Authentification and handling
+gem 'devise'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -36,6 +38,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_girl_rails'
+  gem 'ffaker'
 end
 
 group :development do
@@ -49,8 +53,6 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'ffaker'
-  gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'shoulda-matchers', '~> 3.1'
 end

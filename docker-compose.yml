@@ -33,7 +33,7 @@ services:
     stdin_open: true
     environment:
         DATABASE_URL: "postgres://postgres:password@db:5432/star_wars_ffg_test"
-        RACK_ENV: "test"g
+        RACK_ENV: "test"
         RAILS_ENV: "test"
 
     links:
